@@ -1,0 +1,105 @@
+body {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #d8d7d7;
+  font-family: sans-serif;
+}
+.popup {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: inherit;
+}
+.userimg {
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgb(0, 149, 255);
+  border-radius: 100px;
+}
+.usericon {
+  padding: 10px;
+  font-size: 70px;
+}
+label,
+input {
+  margin: 10px;
+}
+.input {
+  height: 30px;
+  padding: 8px;
+  color: #000;
+  border-radius: 5px;
+  width: 90%;
+  border: 1px solid #4680ff;
+  outline: none;
+}
+.input:focus {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.btn {
+  height: 35px;
+  width: auto;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.log {
+  width: 200px;
+  background-color: #000;
+  color: #fff;
+}
+.nav {
+  background-color: #ba5dfd;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+}
+.navbtnbox {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.naviconbtn {
+  padding: 8px;
+  font-size: 25px;
+  color: #fff;
+  background-color: #4680ff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  margin: 5px;
+}
+.account {
+  height: auto;
+  width: auto;
+  background-color: #fff;
+  box-sizing: 0 0 10px 0 #000;
+  border-radius: 10px;
+  position: absolute;
+  right: 8px;
+  top: 81px;
+  color: #000;
+}
+.vcc{
+    display: none;
+}
+.menubox{
+    height: 100vh;
+    overflow: scroll;
+    background-color: #fff;
+    width: 300px;
+}
+.mybtn{
+    height: auto;
+    margin: 9px;
+    background-color: #e8e5e5;
+    padding: 10px;
+    cursor: pointer;
+}
