@@ -86,20 +86,67 @@ input {
   right: 8px;
   top: 81px;
   color: #000;
+  box-shadow: 0 0 20px 0 #000;
 }
-.vcc{
-    display: none;
+.vcc {
+  display: none;
 }
-.menubox{
-    height: 100vh;
-    overflow: scroll;
-    background-color: #fff;
-    width: 300px;
+.menubox {
+  height: 100vh;
+  overflow: scroll;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  width: 30%;
 }
-.mybtn{
-    height: auto;
-    margin: 9px;
-    background-color: #e8e5e5;
-    padding: 10px;
-    cursor: pointer;
+.mybtn {
+  height: auto;
+  margin: 9px;
+  background-color: #e8e5e5;
+  padding: 10px;
+  cursor: pointer;
+}
+#openphp {
+  width: 100%;
+  height: auto;
+}
+.ux {
+  width: 70%;
+  height: auto;
+}
+.form{
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.inputbox {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center; 
+}
+
+.myinput {
+  width: 200px;
+  padding: 5px;
+}
+n{
+  color: red;
+}
+select{
+  margin: 15px;
+  height: 40px;
+  background-color: #ffffff;
+}
+.long{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #4680ff;
+  border-radius: 10px;
+
+}
+.long img{
+height: 100%;
+width: 100%;
+border-radius: 10px;
 }
