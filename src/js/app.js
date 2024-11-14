@@ -43,7 +43,6 @@ function nomini(){
               
             
         });
-
         if (!found) {
             console.log("error");
            
@@ -54,3 +53,34 @@ function nomini(){
     });
 }
 
+function nid(){
+    const nid = document.getElementById("nid_number").value;
+    const a = document.getElementById("member_name");
+    const b = document.getElementById("father_name");
+    const c = document.getElementById("mother_name"); 
+    const d = document.getElementById("mobile_number");
+    fetch('/config/api/api.php')
+    .then(response => response.json()) 
+    .then(data => {
+        let found = false;
+        data.forEach(item => {
+            if (item.nid_number === nid) {
+                alert(`This Member Alredy joined \n join: ${item.joined} \n name: ${item.name} \n memberID: ${item.id}`)   
+            } 
+            if (item.nominee_id_number === nid) {
+               a.value=item.nominee_name;
+               b.value=item.nominee_father_name;
+               c.value=item.nominee_mother_name;
+               d.value=item.nominee_phone_number;
+
+            } 
+        });
+        if (!found) {
+            console.log("error");
+           
+        }
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    });
+}

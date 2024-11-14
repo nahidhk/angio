@@ -1,21 +1,25 @@
 <br>
 <blockquote>
+    <center>
+        <div style="width: 400px;">
+            <input  onclick="displayData()" oninput="searchData()" class="input" type="text" name="" id="search" placeholder="Search by name , nid , id , phone and joied date ">
+        </div>
+    </center>
 
-<table class="blueTable">
-    <thead>
-        <tr>
-            <th>সদস্য নম্বর</th>
-            <th>সদস্যের ছবি</th>
-            <th>সদস্যের নাম</th>
-            <th>ঠিকানা</th>
-            <th>সদস্যের মোবাইল নম্বর</th>
-            <th>Type</th>
+    <table onload="displayData()" class="blueTable">
+        <thead>
+            <tr>
+                <th>সদস্য নম্বর</th>
+                <th> ছবি</th>
+                <th> নাম</th>
+                <th>এন আই ডি </th>
+                <th>মোবাইল নম্বর</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody id="app">
+
+        </tbody>
         </tr>
-    </thead>
-    <tbody>
-  
-    </tbody>
-    </tr>
-</table>
+    </table>
 </blockquote>
-<script src="/src/js/api.js"></script>

@@ -47,9 +47,9 @@ $nominee_signature = uploadFile($_FILES['nominee_signature'], 'signature');
 
 // Check if any image is null and handle accordingly
 if ($user_img === null || $signature_img === null || $nid_front_img === null || $nid_back_img === null || $nominee_img === null || $nominee_signature === null) {
-    error_log(print_r($_FILES, true));  // Log file details for debugging
+    error_log(print_r($_FILES, true));  
     echo "Error uploading one or more files.";
-    exit; // Stop execution if any file upload failed
+    exit; 
 }
 
 // Insert data into members table

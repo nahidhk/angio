@@ -20,15 +20,16 @@
      <section style="display: flex;">
      <?php require_once("./components/menu.html") ?>
      <div class="ux"><br><br><br>
-     <div id="openphp"><?php require_once("./components/status.html") ?></div>
+     <div id="openphp"><?php require_once("./components/status.php") ?></div>
      </div>
     </section>
      <!-- end menu box system -->
     <!-- all script -->
-    
+    <script src="/src/js/api.js"></script>
     <script src="/src/js/components.js"></script>
      <script src="/src/js/app.js"></script>
      <script src="/src/js/login.js"></script>
+     <script src="/src/js/status.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

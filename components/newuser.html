@@ -5,53 +5,39 @@
     <form action="/src/php/addmember.php" method="post" enctype="multipart/form-data">
 
       <div class="form">
-        <h3>সদস্যের তথ্য</h3>
+        <hr>
+        <center>
+          <h3>সদস্যের তথ্য</h3>
+        </center>
+        <hr>
         <div class="inputbox">
+
+          <div class="myinput">
+            <label for="">জাতীয় পরিচয় পত্র নম্বর <n>*</n></label><br />
+            <input oninput="nid()" name="nid_number" id="nid_number" type="number" pattern="[0-9]*" class="input" placeholder="এখানে লেখুন" required />
+          </div>
+
           <div class="myinput">
             <label for="">সদস্যের নাম <n>*</n></label><br />
-            <input name="member_name" id="member_name" type="text" class="input" placeholder="এখানে লেখুন" required/>
+            <input name="member_name" id="member_name" type="text" class="input" placeholder="এখানে লেখুন" required />
           </div>
 
           <div class="myinput">
             <label for="">সদস্যের পিতার নাম <n>*</n></label><br />
-            <input name="father_name" id="father_name" type="text" class="input" placeholder="এখানে লেখুন" required/>
+            <input name="father_name" id="father_name" type="text" class="input" placeholder="এখানে লেখুন" required />
           </div>
 
           <div class="myinput">
             <label for="">সদস্যের মাতার নাম <n>*</n></label><br />
-            <input name="mother_name" id="mother_name" type="text" class="input" placeholder="এখানে লেখুন" required/>
+            <input name="mother_name" id="mother_name" type="text" class="input" placeholder="এখানে লেখুন" required />
           </div>
+
+        </div>
+        <div class="inputbox">
 
           <div class="myinput">
             <label for="">স্বামী বা স্ত্রীর নাম <n>*</n></label><br />
-            <input name="spouse_name" id="spouse_name" type="text" class="input" placeholder="এখানে লেখুন" required/>
-          </div>
-
-          <div class="myinput">
-            <label for="">জাতীয় পরিচয় পত্র নম্বর <n>*</n></label><br />
-            <input name="nid_number" id="nid_number" type="text" class="input" placeholder="এখানে লেখুন" required/>
-          </div>
-
-          <div class="myinput">
-            <label for="">ঠিকানা <n>*</n></label><br />
-            <input name="address" id="address" type="text" class="input" placeholder="এখানে লেখুন" required/>
-          </div>
-
-          <div class="myinput">
-            <label for="">লিঙ্গ <n>*</n></label><br />
-            <select name="gender" id="gender" class="input" required>
-              <option selected disabled>--Select--</option>
-              <option>পুরুষ</option>
-              <option>মহিলা</option>
-              <option>অনন্য</option>
-            </select>
-          </div>
-
-          <div class="myinput">
-            <label for="">জাতীয়তা <n>*</n></label><br />
-            <select name="nationality" id="nationality" class="input" required>
-              <option selected>বাংলাদেশ</option>
-            </select>
+            <input name="spouse_name" id="spouse_name" type="text" class="input" placeholder="এখানে লেখুন" required />
           </div>
 
           <div class="myinput">
@@ -61,88 +47,125 @@
 
           <div class="myinput">
             <label for="">সদস্যের মোবাইল নম্বর <n>*</n></label><br />
-            <input name="mobile_number" id="mobile_number" type="text" class="input" placeholder="এখানে লেখুন" required />
+            <input name="mobile_number" id="mobile_number" type="text" class="input" placeholder="এখানে লেখুন"
+              required />
           </div>
 
+          <div class="myinput">
+            <label for="">ঠিকানা <n>*</n></label><br />
+            <input name="address" id="address" type="text" class="input" placeholder="এখানে লেখুন" required />
+          </div>
+        </div>
+        <div class="inputbox">
           <div class="myinput">
             <label for="">জন্ম তারিখ <n>*</n></label><br />
             <input name="birth_date" id="birth_date" type="date" class="input" placeholder="এখানে লেখুন" required />
           </div>
 
+
+          <div class="myinput">
+            <label for="">লিঙ্গ <n>*</n></label><br />
+            <select name="gender" id="gender" required>
+              <option selected disabled>--Select--</option>
+              <option>পুরুষ</option>
+              <option>মহিলা</option>
+              <option>অনন্য</option>
+            </select>
+          </div>
+
+          <div class="myinput">
+            <label for="">জাতীয়তা <n>*</n></label><br />
+            <select name="nationality" id="nationality" required>
+              <option selected>বাংলাদেশ</option>
+            </select>
+          </div>
+
           <div class="myinput">
             <label for="">ধর্ম <n>*</n></label><br />
-            <select name="religion" id="religion" class="input" required>
+            <select name="religion" id="religion" required>
               <option>ইসলাম</option>
               <option>হিন্দু</option>
               <option>খ্রিস্টান</option>
               <option>অনন্য</option>
             </select>
           </div>
+
         </div>
-
         <div class="inputbox">
-          <div class="myinput">
-            <label for="">সদস্যের ছবি <n>*</n></label><br />
-            <div class="long">
-              <input oninput="upphoto('userimg')" name="user_img" id="userimg" type="file" required accept="image/*" />
-              <img id="suserimg" />
+            <div class="myinput">
+              <label for="">সদস্যের ছবি  <n>*</n></label><br />
+              <div class="long">
+                <input oninput="upphoto('userimg')" name="user_img" id="userimg" type="file" required
+                  accept="image/*" />
+                <img id="suserimg" />
+              </div>
+            </div>
+
+            <div class="myinput">
+              <label for="">সদস্যের স্বাক্ষর <n>*</n></label><br />
+              <div class="long">
+                <input oninput="upphoto('suser')" name="signature_img" id="suser" type="file" required
+                  accept="image/*" />
+                <img id="simg" />
+              </div>
+            </div>
+
+            <div class="myinput">
+              <label for="">এন আই ডি সামনে <n>*</n></label><br />
+              <div class="long">
+                <input oninput="upphoto('nidfont')" name="nid_front_img" id="nidfont" type="file" required
+                  accept="image/*" />
+                <img id="snidf" />
+              </div>
+            </div>
+
+            <div class="myinput">
+              <label for="">সদস্যের এই আইডি পিছনে <n>*</n></label><br />
+              <div class="long">
+                <input oninput="upphoto('nidback')" name="nid_back_img" id="nidback" type="file" required
+                  accept="image/*" />
+                <img id="snidb" />
+              </div>
             </div>
           </div>
-
-          <div class="myinput">
-            <label for="">সদস্যের স্বাক্ষর <n>*</n></label><br />
-            <div class="long">
-              <input oninput="upphoto('suser')" name="signature_img" id="suser" type="file" required accept="image/*" />
-              <img id="simg" />
-            </div>
-          </div>
-
-          <div class="myinput">
-            <label for="">এন আই ডি সামনে <n>*</n></label><br />
-            <div class="long">
-              <input oninput="upphoto('nidfont')" name="nid_front_img" id="nidfont" type="file" required accept="image/*" />
-              <img id="snidf" />
-            </div>
-          </div>
-
-          <div class="myinput">
-            <label for="">সদস্যের এই আইডি পিছনে <n>*</n></label><br />
-            <div class="long">
-              <input oninput="upphoto('nidback')" name="nid_back_img" id="nidback" type="file" required accept="image/*" />
-              <img id="snidb" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br /><br />
-
-      <div class="form">
-        <h3>নামিনির তথ্য</h3>
+        
+        <hr>
+        <center>
+          <h3>নামিনির তথ্য</h3>
+        </center>
+        <hr>
         <div class="inputbox">
+
           <div class="myinput">
-            <label for="">আইডি নাম্বার <n>*</n></label><br />
-            <input name="nominee_id" oninput="nomini()" pattern="[0-9]*" id="nominee_id" type="number" class="input" placeholder="এখানে লেখুন" required />
+            <label for="">জাতীয় পরিচয় পত্র নম্বর<n>*</n></label><br />
+            <input name="nominee_id" oninput="nomini()" pattern="[0-9]*" id="nominee_id" type="number" class="input"
+              placeholder="এখানে লেখুন" required />
           </div>
 
           <div class="myinput">
             <label for="">নমিনি ব্যক্তির নাম <n>*</n></label><br />
-            <input  name="nominee_name" id="nominee_name" type="text" class="input" placeholder="এখানে লেখুন" required />
+            <input name="nominee_name" id="nominee_name" type="text" class="input" placeholder="এখানে লেখুন" required />
           </div>
 
           <div class="myinput">
             <label for="">নমিনের পিতার নাম <n>*</n></label><br />
-            <input name="nominee_father_name" id="nominee_father_name" type="text" class="input" placeholder="এখানে লেখুন" required />
+            <input name="nominee_father_name" id="nominee_father_name" type="text" class="input"
+              placeholder="এখানে লেখুন" required />
           </div>
 
           <div class="myinput">
             <label for="">নমিনী মাতার নাম <n>*</n></label><br />
-            <input name="nominee_mother_name" id="nominee_mother_name" type="text" class="input" placeholder="এখানে লেখুন" required />
+            <input name="nominee_mother_name" id="nominee_mother_name" type="text" class="input"
+              placeholder="এখানে লেখুন" required />
           </div>
+        </div>
+        <div class="inputbox">
+
 
           <div class="myinput">
             <label for="">নমিনির মোবাইল নম্বর <n>*</n></label><br />
-            <input name="nominee_mobile" id="nominee_mobile" type="text" class="input" placeholder="এখানে লেখুন" required />
+            <input name="nominee_mobile" id="nominee_mobile" type="text" class="input" placeholder="এখানে লেখুন"
+              required />
           </div>
 
           <div class="myinput">
@@ -153,23 +176,30 @@
           <div class="myinput">
             <label for="">নমিনির ছবি <n>*</n></label><br />
             <div class="long">
-              <input oninput="upphoto('npic')" name="nominee_img" id="npic" type="file" required accept="image/*" />
+              <input onchange="upphoto('npic')" name="nominee_img" id="npic" type="file" required accept="image/*" />
               <img id="snpic" />
             </div>
           </div>
-
+ 
           <div class="myinput">
             <label for="">স্বাক্ষর <n>*</n></label><br />
             <div class="long">
-              <input oninput="upphoto('nspic')" name="nominee_signature" id="nspic" type="file" required accept="image/*" />
+              <input oninput="upphoto('nspic')" name="nominee_signature" id="nspic" type="file" required
+                accept="image/*" />
               <img id="snspic" />
             </div>
           </div>
+
         </div>
+        <br><br>
+        <hr>
+        <center>
+          <button type="submit" class="btn log">Save</button>
+        </center>
+        <hr>
+        <br><br>
       </div>
-      <center>
-        <button type="submit" class="btn log">Save</button>
-      </center>
+
     </form>
   </div>
 </blockquote>

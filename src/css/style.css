@@ -134,9 +134,16 @@ n{
   color: red;
 }
 select{
+  padding: 10px;
   margin: 15px;
   height: 40px;
   background-color: #ffffff;
+  color: #000;
+  border-radius: 5px;
+  width: 90%;
+  border: 1px solid #4680ff;
+  outline: none;
+
 }
 .long{
   width: 200px;
@@ -145,11 +152,13 @@ select{
   border-radius: 10px;
 
 }
-.long img{
-height: 100%;
-width: 100%;
-border-radius: 10px;
+.long img {
+  height: 100%;
+  width: 100%;
+ border-radius: 10px;
+ display: none;
 }
+
 table.blueTable {
   border: 1px solid #1C6EA4;
   background-color: #EEEEEE;
@@ -175,7 +184,8 @@ table.blueTable thead {
   border-bottom: 2px solid #444444;
 }
 table.blueTable thead th {
-  font-size: 15px;
+  text-align: center;
+  font-size: medium;
   font-weight: bold;
   color: #FFFFFF;
   border-left: 1px solid #FFFFFF;
@@ -183,21 +193,57 @@ table.blueTable thead th {
 table.blueTable thead th:first-child {
   border-left: none;
 }
-
-table.blueTable tfoot td {
-  font-size: 14px;
-}
-table.blueTable tfoot .links {
-  text-align: right;
-}
-table.blueTable tfoot .links a{
-  display: inline-block;
-  background: #1C6EA4;
+.apibtn{
+  height: auto;
+  width: auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #4680ff;
   color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 15pt;
 }
-.uimg{
-  height: 70px;
-  width: 70px;
+.active{
+  background-color: #ba5dfd;
+  color: #fff;
+}
+.false{
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.slice {
+  stroke: #fff;
+  stroke-width: 1px;
+  color: #fff;
+}
+.hover-slice {
+  stroke-width: 2px;
+}
+.legend {
+  font-size: 12px;
+  cursor: pointer;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.legend-item.strikethrough {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+
 }
