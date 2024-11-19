@@ -35,7 +35,7 @@ async function displayData(searchInput = "") {
             <td style="font-size: medium;">${item.phone_number} </td>
            <td>
             <div style="display: flex;">
-                <button onclick="appdata('edit')" id="edit" class="apibtn"><i class="fa-solid fa-pencil"></i></button>
+                <button onclick="calledit(${item.id})" id="edit" class="apibtn"><i id="ldicon${item.id}" class="fa-solid fa-pencil"></i></button>
                 <button class="apibtn"><i class="fa-regular fa-file-lines"></i></button>
                 <button class="apibtn"><i class="fa-solid fa-print"></i></button>
             </div>

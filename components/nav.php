@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
 
  ?>
  <!-- system nav -->
-  <div class="nav">
+  <div class="nav animate__fadeInDown animate__animated">
     <nav>
         <blockquote>
            <h1>Dashboard</h1>

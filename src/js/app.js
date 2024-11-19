@@ -84,3 +84,15 @@ function nid(){
         console.log('Error:', error);
     });
 }
+
+function code4(inputid) {
+    const officecode = document.getElementById(inputid);
+    const valueLength = officecode.value.length;
+
+    if (valueLength === 4) {
+        officecode.style.border = "2px solid #4680ff"; // সঠিক হলে নীল বর্ডার
+    } else {
+        officecode.style.border = "2px solid red"; // ভুল হলে লাল বর্ডার
+    }
+}
+

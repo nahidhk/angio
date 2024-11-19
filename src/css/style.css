@@ -244,6 +244,15 @@ table.blueTable thead th:first-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+}
+.uimg{
+  height: 150px;
+  width: 150px;
 
+}
+.leftpoint{
+  margin: 10px;
+}
+.leftpoint p{
+  text-transform: uppercase;
 }

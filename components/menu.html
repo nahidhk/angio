@@ -3,14 +3,47 @@
     <br><br><br><br>
     <blockquote>
         <div onclick="window.location.href='/';localStorage.clear();" id="" class="mybtn">
-            <i class="fa-solid fa-chart-pie"></i>  Status
+            <i class="fa-solid fa-chart-pie"></i> Status
         </div>
-        <div onclick="appdata('newuser')" id="newuser" class="mybtn">
-            <i class="fa-solid fa-user-plus"></i>   নুতুন সদস্য রেজিস্টার 
+        <details>
+
+            <summary onclick="appdata('user')" id="user" class="mybtn">
+                <i class="fa-solid fa-user-plus"></i> সদস্য
+            </summary>
+            <blockquote>
+                <div onclick="appdata('newuser')" id="newuser" class="mybtn">
+                    <i class="fa-solid fa-user-plus"></i> নুতুন সদস্য রেজিস্টার
+                </div>
+                <div onclick="appdata('userlist')" id="userlist" class="mybtn">
+                    <i class="fa-solid fa-users"></i> সদস্যের তালিকা
+                </div>
+                <div onclick="appdata('editbox')" id="editbox" class="mybtn">
+                    <i class="fa-solid fa-user-pen"></i> এডিট সদস্যের তালিকা
+                </div>
+                <div onclick="appdata('log')" id="log" class="mybtn">
+                    <i class="fa-solid fa-user-gear"></i> সদস্যের লগ তথ্য
+                </div>
+            </blockquote>
+        </details>
+
+        <div onclick="appdata('cashbook')" id="cashbook" class="mybtn">
+            <i class="fa-solid fa-sack-dollar"></i> ক্যাশবুক জমা ও খরচ
         </div>
-        <div onclick="appdata('userlist')" id="userlist" class="mybtn">
-            <i class="fa-solid fa-users"></i>   সদস্যের তালিকা 
-        </div>
+
+
+        <!-- setting this app -->
+        <details>
+            <summary onclick="appdata('setting')" id="setting" class="mybtn">
+                <i class="fa-solid fa-gear"></i> Setting
+            </summary>
+            <blockquote>
+                <div onclick="appdata('allcode')" id="allcode" class="mybtn">
+                    <i class="fa-solid fa-people-carry-box"></i> সকল কোড 
+                </div>
+
+            </blockquote>
+
+        </details>
         <h3>Add More to update</h3>
     </blockquote>
 </div>

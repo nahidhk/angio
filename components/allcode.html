@@ -1,0 +1,32 @@
+<blockquote>
+    <br /><br />
+    <div class="form">
+        <hr />
+        <center>
+            <h3>Input The Office Code </h3>
+        </center>
+        <hr />
+        <form action="/databases/code.php" method="post">
+            <div class="inputbox">
+                <div class="myinput">
+                    <label for="">
+                        কোড নাম্বার <n><small>* 4 সংখ্যা লিমিট</small></n></label><br />
+                    <input oninput="code4('officecode')" name="officecode" id="officecode" type="number" class="input"
+                        pattern="[0-9]*" placeholder="1234" required />
+                </div>
+                <div class="myinput">
+                    <label for="">
+                        অফিস এর নাম  <n><small>*</small></n></label><br />
+                    <input  name="officname" id="" type="text" class="input"
+                 placeholder=" অফিস এর নাম " required />
+                </div> 
+            </div>
+            <div class="inputbox">
+                <div class="myinput">
+                    <button class="log btn input"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</blockquote>
