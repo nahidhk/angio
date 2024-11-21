@@ -127,10 +127,9 @@ function code3(inputid) {
 async function apiopentab(appp) {
   try {
     const response = await fetch(`/config/api/${appp}.php`);
-    const data = await response.json(); // JSON ডাটা পার্স করতে হবে
+    const data = await response.json(); 
     const dataContainer = document.getElementById(appp);
     dataContainer.innerHTML = "";
-
     data.forEach((item) => {
       const itemElement = document.createElement("tr");
       itemElement.innerHTML = `

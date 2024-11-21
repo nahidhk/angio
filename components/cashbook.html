@@ -1,60 +1,66 @@
 <blockquote>
-    <br><br>
+    <br /><br />
     <div class="form">
-        <hr>
+        <hr />
         <center>
             <h2>CashBook</h2>
+        </center>
+        <hr />
+        <center>
+            <div class="flex fcenter" >
+                <div>
+                    <img height="100" width="100" src="/icon.png" alt="" srcset="">
+                </div>
+                <div>
+                    Name : This is a name<br>
+                    ID : This is a ID <br>
+                    Phone : 01877357091
+                </div>
+            </div>
         </center>
         <hr>
         <form action="" method="post">
             <div class="inputbox">
+               
+                <div class="myinput">
+                    <label for="">সদস্য নম্বর <n>*</n></label><br />
+                    <input oninput="userid()" onclick="nodeval('setoffice')" name="userid" id="userid" type="number" class="input"
+                        pattern="[0-9]*" placeholder="123" required />
+                </div>
 
                 <div class="myinput">
-                    <label for="">অফিস কোড<n>*</n></label><br />
-                    <select name="officeid" id="officeid">
-                        <option value="1">1</option>
-                    </select>
+                    <label for="officeid">অফিস কোড<span>*</span></label><br />
+                    <select onclick="nodeval('appdata1')" name="officeid" id="setoffice"></select>
                 </div>
 
                 <div class="myinput">
                     <label for="">হিসাব কোড<n>*</n></label><br />
-                    <select name="acccode" id="acccode">
-
-                        <option value="1">1</option>
-                    </select>
+                    <select name="acccode" id="appdata1"></select>
                 </div>
-                
-                <div class="myinput">
-                    <label for="">সদস্য নম্বর <n>*</n></label><br />
-                    <input name="userid" id="userid" type="number" class="input" pattern="[0-9]*" placeholder="123" required>
-                </div>
-
             </div>
             <div class="inputbox">
-
                 <div class="myinput">
                     <label for=""> বিবরণী</label><br />
-                    <input name="detelces" id="" type="text" class="input"  placeholder="এখানে লিখুন " >
+                    <input name="detelces" id="" type="text" class="input" placeholder="এখানে লিখুন " />
                 </div>
 
                 <div class="myinput">
                     <label for="">রেফার বা অন্য কর</label><br />
-                    <input name="refear" id="" type="text" class="input"  placeholder="এখানে লিখুন " >
+                    <input name="refear" id="" type="text" class="input" placeholder="এখানে লিখুন " />
                 </div>
-                
             </div>
-            <div class="inputbox"> 
-
+            <div class="inputbox">
                 <div class="myinput">
                     <label for="">জমা <n>*</n></label><br />
-                    <input name="deposit" id="" type="number" class="input" pattern="[0-9]*" placeholder="123" required>
+                    <input name="deposit" id="" type="number" class="input" pattern="[0-9]*" placeholder="123"
+                        required />
                 </div>
 
                 <div class="myinput">
                     <label for=""> খরচ<n>*</n></label><br />
-                    <input name="deposit" id="" type="number" class="input" pattern="[0-9]*" placeholder="123" required>
+                    <input name="deposit" id="" type="number" class="input" pattern="[0-9]*" placeholder="123"
+                        required />
                 </div>
-
             </div>
         </form>
     </div>

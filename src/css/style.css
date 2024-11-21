@@ -259,3 +259,12 @@ table.blueTable thead th:first-child {
 summary{
   cursor: pointer;
 }
+.flex{
+  display: flex;
+}
+.fcenter{
+  justify-content: center;
+}
+.anaround{
+  justify-content: space-around;
+}
