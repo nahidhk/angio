@@ -16,17 +16,84 @@
                 </div>
                 <div class="myinput">
                     <label for="">
-                        অফিস এর নাম  <n><small>*</small></n></label><br />
-                    <input  name="officname" id="" type="text" class="input"
-                 placeholder=" অফিস এর নাম " required />
-                </div> 
+                        অফিস এর নাম <n><small>*</small></n></label><br />
+                    <input name="officname" id="" type="text" class="input" placeholder=" অফিস এর নাম " required />
+                </div>
             </div>
             <div class="inputbox">
                 <div class="myinput">
                     <button class="log btn input"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-
         </form>
+        <div>
+            <blockquote>
+                <details>
+                    <summary onclick="apiopentab('setoffice')">View officecode List</summary>
+                    <table class="blueTable">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Office Code</th>
+                                <th>Office Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="setoffice">
+                        </tbody>
+                    </table>
+                </details>
+            </blockquote>
+        </div>
     </div>
+
+
+    <br><br>
+    <div class="form">
+        <hr />
+        <center>
+            <h3>Input The account code and name </h3>
+        </center>
+        <hr />
+        <form action="/databases/code1.php" method="post">
+            <div class="inputbox">
+                <div class="myinput">
+                    <label for="">
+                        কোড নাম্বার <n><small>* 3 সংখ্যা লিমিট</small></n></label><br />
+                    <input oninput="code3('accnum')" name="officecode" id="accnum" type="number" class="input"
+                        pattern="[0-9]*" placeholder="123" required />
+                </div>
+                <div class="myinput">
+                    <label for="">
+                        হিসাব এর নাম <n><small>*</small></n></label><br />
+                    <input name="officname" id="" type="text" class="input" placeholder=" হিসাব এর নাম " required />
+                </div>
+            </div>
+            <div class="inputbox">
+                <div class="myinput">
+                    <button class="log btn input"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <blockquote>
+                <details>
+                    <summary onclick="apiopentab('appdata1')">View officecode List</summary>
+                    <table class="blueTable">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>account Code</th>
+                                <th>account Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appdata1">
+                        </tbody>
+                    </table>
+                </details>
+            </blockquote>
+        </div>
+    </div>
+
+
+
 </blockquote>

@@ -256,3 +256,6 @@ table.blueTable thead th:first-child {
 .leftpoint p{
   text-transform: uppercase;
 }
+summary{
+  cursor: pointer;
+}
