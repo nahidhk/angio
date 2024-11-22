@@ -52,3 +52,4 @@ if ($result->num_rows > 0) {
     </nav>
    </div>
    <!-- system nav -->
+    <script>sessionStorage.setItem("admin","<?php echo $row['username']; ?>")</script>

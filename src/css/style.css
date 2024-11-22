@@ -114,7 +114,7 @@ input {
   width: 70%;
   height: auto;
 }
-.form{
+.form {
   background-color: #fff;
   width: 100%;
   padding: 10px;
@@ -123,17 +123,17 @@ input {
 .inputbox {
   display: flex;
   flex-wrap: wrap;
-justify-content: center; 
+  justify-content: center;
 }
 
 .myinput {
   width: 200px;
   padding: 5px;
 }
-n{
+n {
   color: red;
 }
-select{
+select {
   padding: 10px;
   margin: 15px;
   height: 40px;
@@ -143,73 +143,77 @@ select{
   width: 90%;
   border: 1px solid #4680ff;
   outline: none;
-
 }
-.long{
+.long {
   width: 200px;
   height: 200px;
   border: 1px solid #4680ff;
   border-radius: 10px;
-
 }
 .long img {
   height: 100%;
   width: 100%;
- border-radius: 10px;
- display: none;
+  border-radius: 10px;
+  display: none;
 }
 
 table.blueTable {
-  border: 1px solid #1C6EA4;
-  background-color: #EEEEEE;
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
 }
-table.blueTable td, table.blueTable th {
-  border: 1px solid #AAAAAA;
+table.blueTable td,
+table.blueTable th {
+  border: 1px solid #aaaaaa;
   padding: 9px 8px;
 }
 table.blueTable tbody td {
   font-size: 13px;
 }
 table.blueTable tr:nth-child(even) {
-  background: #E2E2E2;
+  background: #e2e2e2;
 }
 table.blueTable thead {
-  background: #1C6EA4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: #1c6ea4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #5592bb 0%,
+    #327cad 66%,
+    #1c6ea4 100%
+  );
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
   border-bottom: 2px solid #444444;
 }
 table.blueTable thead th {
   text-align: center;
   font-size: medium;
   font-weight: bold;
-  color: #FFFFFF;
-  border-left: 1px solid #FFFFFF;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
 }
 table.blueTable thead th:first-child {
   border-left: none;
 }
-.apibtn{
+.apibtn {
   height: auto;
   width: auto;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: #4680ff;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 5px;
   padding: 10px;
   font-size: 15pt;
 }
-.active{
+.active {
   background-color: #ba5dfd;
   color: #fff;
 }
-.false{
+.false {
   height: 1px;
   width: 1px;
   padding: 0;
@@ -245,26 +249,54 @@ table.blueTable thead th:first-child {
   align-items: center;
   justify-content: center;
 }
-.uimg{
+.uimg {
   height: 150px;
   width: 150px;
-
 }
-.leftpoint{
+.leftpoint {
   margin: 10px;
 }
-.leftpoint p{
+.leftpoint p {
   text-transform: uppercase;
 }
-summary{
+summary {
   cursor: pointer;
 }
-.flex{
+.flex {
   display: flex;
 }
-.fcenter{
+.fcenter {
   justify-content: center;
 }
-.anaround{
+.anaround {
   justify-content: space-around;
+}
+.icon-size {
+  font-size: 80px;
+}
+.card {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 #000;
+}
+.grap {
+  justify-content: space-evenly;
+}
+.card1 {
+  background-image: url("/img/card1.png");
+  background-size: cover;
+  color: #fff;
+}
+.mytitle {
+  margin: 10px;
+  font-size: 20pt;
+  font-weight: bold;
+  font-family: monospace;
+}
+.number {
+  font-size: 27pt;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
 }

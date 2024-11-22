@@ -27,3 +27,18 @@ CREATE TABLE members (
     nominee_signature VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 );
+
+
+CREATE TABLE your_table_name (
+    id INT AUTO_INCREMENT PRIMARY KEY, -- ইউনিক আইডি (অটো ইনক্রিমেন্ট)
+    userid VARCHAR(50) NOT NULL,       -- ইউজারের আইডি
+    officecode VARCHAR(50),            -- অফিস কোড
+    acccode VARCHAR(50),               -- অ্যাকাউন্ট কোড
+    detels TEXT,                       -- বিবরণ
+    refer VARCHAR(100),                -- রেফারেন্স
+    deposit DECIMAL(10, 2),            -- জমার পরিমাণ
+    cost DECIMAL(10, 2),               -- খরচের পরিমাণ
+    admin VARCHAR(50),                 -- অ্যাডমিন
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- ইনসার্ট করার সময়
+);
+

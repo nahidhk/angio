@@ -5,7 +5,7 @@ function appdata(clickdata) {
   const paths = {
     newuser: "./components/newuser.html",
     userlist: "./components/userlist.html",
-    "status": "./components/status.html",
+    "status": "./components/status.php",
     edit: `./components/edit.php?id=${id}`,
     editbox: "./components/editbox.html",
     log: "./components/log.html",

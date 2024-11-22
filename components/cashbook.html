@@ -8,23 +8,16 @@
         <hr />
         <center>
             <div class="flex fcenter" >
-                <div>
-                    <img height="100" width="100" src="/icon.png" alt="" srcset="">
-                </div>
-                <div>
-                    Name : This is a name<br>
-                    ID : This is a ID <br>
-                    Phone : 01877357091
-                </div>
+               <div id="showmydat"></div>
             </div>
         </center>
         <hr>
-        <form action="" method="post">
+        <form action="/php/cashbook.php" method="post">
             <div class="inputbox">
                
                 <div class="myinput">
                     <label for="">সদস্য নম্বর <n>*</n></label><br />
-                    <input oninput="userid()" onclick="nodeval('setoffice')" name="userid" id="userid" type="number" class="input"
+                    <input oninput="useridckdt()"  name="userid" id="userid" type="number" class="input"
                         pattern="[0-9]*" placeholder="123" required />
                 </div>
 
@@ -41,7 +34,7 @@
             <div class="inputbox">
                 <div class="myinput">
                     <label for=""> বিবরণী</label><br />
-                    <input name="detelces" id="" type="text" class="input" placeholder="এখানে লিখুন " />
+                    <input name="detels" id="" type="text" class="input" placeholder="এখানে লিখুন " />
                 </div>
 
                 <div class="myinput">
@@ -58,9 +51,14 @@
 
                 <div class="myinput">
                     <label for=""> খরচ<n>*</n></label><br />
-                    <input name="deposit" id="" type="number" class="input" pattern="[0-9]*" placeholder="123"
+                    <input name="cost" id="" type="number" class="input" pattern="[0-9]*" placeholder="123"
                         required />
                 </div>
+                <input class="false" name="admin" id="adminnameio" type="text">
+               
+            </div>
+            <div class="inputbox">
+                <div class="myinput"><button class="input btn log">GO</button></div>
             </div>
         </form>
     </div>
