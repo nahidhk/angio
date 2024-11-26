@@ -1,65 +1,127 @@
 <blockquote>
     <br /><br />
+    <section id="enpop" class="darkside vcc">
+        <div class="popup">
+            <button onclick="window.location='/'" style="margin: 10px; float: right;"
+                class="btn bug input">Cancel</button>
+            <hr />
+            <center>
+
+                <h2>entry CashBook</h2>
+            </center>
+            <hr />
+            <center>
+                <div class="flex fcenter">
+                    <div id="showmydat"></div>
+                </div>
+            </center>
+            <hr>
+            <form action="/php/cashbook.php" method="post">
+                <div class="inputbox">
+
+                    <div class="myinput">
+                        <label for="">সদস্য নম্বর <n>*</n></label><br />
+                        <input oninput="useridckdt()" name="userid" id="userid" type="number" class="input"
+                            pattern="[0-9]*" placeholder="123" required />
+                    </div>
+
+                    <div class="myinput">
+                        <label for="officeid">অফিস কোড<span>*</span></label><br />
+                        <select onclick="nodeval('appdata1')" name="officeid" id="setoffice" required></select>
+                    </div> 
+
+                    <div class="myinput">
+                        <label for="">হিসাব কোড<n>*</n></label><br />
+                        <input class="input" type="number" name="acccode" id="appdata1" required>
+                           
+                      
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <div class="myinput">
+                        <label for=""> বিবরণী</label><br />
+                        <input name="detels" id="" type="text" class="input" placeholder="এখানে লিখুন " />
+                    </div>
+
+                    <div class="myinput">
+                        <label for="">রেফার বা অন্য কর</label><br />
+                        <input name="refear" id="" type="text" class="input" placeholder="এখানে লিখুন " />
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <div class="myinput">
+                        <label for="">জমা <n>*</n></label><br />
+                        <input value="0.00" name="deposit" id="" type="number" class="input" pattern="[0-9]*"
+                            placeholder="123" required />
+                    </div>
+
+                    <div class="myinput">
+                        <label for=""> খরচ<n>*</n></label><br />
+                        <input value="0.00" name="cost" id="" type="number" class="input" pattern="[0-9]*"
+                            placeholder="123" required />
+                    </div>
+                    <input class="false" name="admin" id="adminnameio" type="text">
+
+                </div>
+                <div class="inputbox">
+                    <div class="myinput"><button class="input btn log">GO</button></div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
     <div class="form">
-        <hr />
+        <hr>
+        <button onclick="document.getElementById('enpop').style.display='block'; nodeval('setoffice');" style="width: 100px; float: right; margin: 10px;" class="btn input real">Entry</button>
         <center>
-            <h2>CashBook</h2>
-        </center>
-        <hr />
-        <center>
-            <div class="flex fcenter" >
-               <div id="showmydat"></div>
-            </div>
+            <h2>Cash Book</h2>
         </center>
         <hr>
-        <form action="/php/cashbook.php" method="post">
-            <div class="inputbox">
-               
-                <div class="myinput">
-                    <label for="">সদস্য নম্বর <n>*</n></label><br />
-                    <input oninput="useridckdt()"  name="userid" id="userid" type="number" class="input"
-                        pattern="[0-9]*" placeholder="123" required />
-                </div>
+        <table class="blueTable">
+            <thead>
+                <tr onclick="thisData()">
+                    <th>Id NO </th>
+                    <th>Date</th>
+                    <th>UserId</th>
+                    <th>Refear</th>
+                    <th>Detels</th>
+                    <th>Office Code</th>
+                    <th>Acc Code</th>
+                    <th>Deposit</th>
+                    <th>Cost</th>
+                    <th>Post</th>
+                </tr>
+            </thead>
+            <tbody id="cashapp">
 
-                <div class="myinput">
-                    <label for="officeid">অফিস কোড<span>*</span></label><br />
-                    <select onclick="nodeval('appdata1')" name="officeid" id="setoffice"></select>
-                </div>
+            </tbody>
+            </tr>
+        </table>
 
-                <div class="myinput">
-                    <label for="">হিসাব কোড<n>*</n></label><br />
-                    <select name="acccode" id="appdata1"></select>
-                </div>
-            </div>
-            <div class="inputbox">
-                <div class="myinput">
-                    <label for=""> বিবরণী</label><br />
-                    <input name="detels" id="" type="text" class="input" placeholder="এখানে লিখুন " />
-                </div>
 
-                <div class="myinput">
-                    <label for="">রেফার বা অন্য কর</label><br />
-                    <input name="refear" id="" type="text" class="input" placeholder="এখানে লিখুন " />
-                </div>
-            </div>
-            <div class="inputbox">
-                <div class="myinput">
-                    <label for="">জমা <n>*</n></label><br />
-                    <input name="deposit" id="" type="number" class="input" pattern="[0-9]*" placeholder="123"
-                        required />
-                </div>
 
-                <div class="myinput">
-                    <label for=""> খরচ<n>*</n></label><br />
-                    <input name="cost" id="" type="number" class="input" pattern="[0-9]*" placeholder="123"
-                        required />
-                </div>
-                <input class="false" name="admin" id="adminnameio" type="text">
-               
-            </div>
-            <div class="inputbox">
-                <div class="myinput"><button class="input btn log">GO</button></div>
-            </div>
-        </form>
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
 </blockquote>

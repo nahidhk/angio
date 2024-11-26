@@ -28,7 +28,6 @@ CREATE TABLE members (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 );
 
-
 CREATE TABLE your_table_name (
     id INT AUTO_INCREMENT PRIMARY KEY, -- ইউনিক আইডি (অটো ইনক্রিমেন্ট)
     userid VARCHAR(50) NOT NULL,       -- ইউজারের আইডি

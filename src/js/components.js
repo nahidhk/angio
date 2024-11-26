@@ -13,6 +13,7 @@ function appdata(clickdata) {
     cashbook: "./components/cashbook.html",
     allcode: "./components/allcode.html",
     user: "./components/user.php",
+    ledger: "./components/ledger.html",
   };
  
   const myfolder = document.getElementById("openphp");

@@ -300,3 +300,21 @@ summary {
   font-family: sans-serif;
   margin: 10px;
 }
+.darkside{
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 299;
+  top: 0;
+  left: 0;
+  background-color: #0000002c;
+}
+.bug{
+  background-color: red;
+  color: #fff;
+}
+.real{
+  background-color: #4680ff;
+  color: #fff;
+}

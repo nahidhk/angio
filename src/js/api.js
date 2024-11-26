@@ -20,9 +20,6 @@ async function displayData(searchInput = "") {
           (item.joied && item.joied.toLowerCase().includes(searchInput.toLowerCase()))
       );
       
-  
-   
-    
       filteredData.forEach((item) => {
         
         const itemElement = document.createElement("tr");
@@ -60,3 +57,61 @@ async function displayData(searchInput = "") {
   
 
 console.log("api js")
+
+
+
+async function thisData(searchInput = "") {
+ 
+  try {
+    const response = await fetch("/config/api/cashbook.php");
+    const data = await response.json();
+    const dataContainer = document.getElementById("cashapp");
+    if (!dataContainer) {
+      throw new Error("Element with id 'app' not found.");
+    }
+
+    dataContainer.innerHTML = "";
+
+    const filteredData = data.filter(
+      (item) =>
+        (item.id && item.id.toLowerCase().includes(searchInput.toLowerCase())) ||
+        (item.name && item.name.toLowerCase().includes(searchInput.toLowerCase())) ||
+        (item.phone_number && item.phone_number.toLowerCase().includes(searchInput.toLowerCase())) ||
+        (item.nid_number && item.nid_number.toLowerCase().includes(searchInput.toLowerCase())) ||
+        (item.joied && item.joied.toLowerCase().includes(searchInput.toLowerCase()))
+    );
+    
+    filteredData.forEach((item) => {
+      
+      const itemElement = document.createElement("tr");
+      itemElement.innerHTML = `
+   <tr>
+   <td>${item.id}</td>
+   <td>${item.created_at}</td>
+   <td>${item.userid}</td>
+   <td>${item.refer}</td>
+   <td>${item.detels}</td>
+   <td>${item.officecode}</td>
+   <td>${item.acccode}</td>
+   <td>${item.deposit}</td>
+   <td>${item.cost}</td>
+   <td>${item.admin}</td>
+   </tr>
+          
+            `;
+
+      dataContainer.appendChild(itemElement);
+    });
+  } catch (error) {
+    console.error("data error", error);
+  }
+}
+
+
+function searchData() {
+  const searchInput = document.querySelector("#search").value;
+  displayData(searchInput);
+  window.location.href ="#" + searchInput ;
+}
+
+

@@ -10,7 +10,7 @@ async function nodeval(appp) {
         data.forEach((item) => {
             const itemElement = document.createElement("option");
             itemElement.value = item.officecode;  
-            itemElement.textContent = item.codename;  
+            itemElement.textContent = item.officecode;  
             dataContainer.appendChild(itemElement); 
         });
     } catch (error) {
